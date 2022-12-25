@@ -525,12 +525,16 @@
                         <!-- Contact Form Start -->
                         <div class="row">
                             <div class="contact-form padd-15">
-                                <form action="contact.php" method="post" class="padd-15">
+                                <form action="https://api.staticforms.xyz/submit" method="post" class="padd-15" id="form">
+                                    <input type="hidden" name="accessKey" value="652bf1d9-f509-41ef-802c-5e0b655abcd3">
+                                    <input type="hidden" name="redirectTo" value="https://erik-sillva.github.io/Portfolio/#contact">
+                                    
                                     <div class="row padd-15">
                                         <!-- Form Item 1 Start -->
                                         <div class="form-item col-6">
                                             <div class="form-group">
-                                                <input type="text" name="Name" class="form-control" id="name" placeholder="Name">
+                                                <input type="text" name="name" class="form-control required" id="name" placeholder="Name" oninput="nameValidate()" required>
+                                                <span class="span-required text-danger padd-15">Preencha esse campo antes de enviar</span>
                                             </div>
                                         </div>
                                         <!-- Form Item 1 End -->
@@ -538,7 +542,8 @@
                                         <!-- Form Item 2 Start -->
                                         <div class="form-item col-6">
                                             <div class="form-group">
-                                                <input type="email" name="Email" class="form-control" id="email" placeholder="Email">
+                                                <input type="email" name="email" class="form-control required" id="email" placeholder="Email" oninput="emailValidate()" required>
+                                                <span class="span-required text-danger padd-15">Digite um email válido</span>
                                             </div>
                                         </div>
                                         <!-- Form Item 2 End -->
@@ -547,7 +552,8 @@
                                     <!-- Form Item 3 Start -->
                                     <div class="form-item padd-15 col-12">
                                         <div class="form-group">
-                                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+                                            <input type="text" name="subject" id="subject" class="form-control required" placeholder="Subject" oninput="subjectValidate()" required>
+                                            <span class="span-required text-danger padd-15">Preencha esse campo antes de enviar</span>
                                         </div>
                                     </div>
                                     <!-- Form Item 3 End -->
@@ -555,14 +561,15 @@
                                     <!-- Form Item 4 Start -->
                                     <div class="form-item padd-15 col-12">
                                         <div class="form-group">
-                                            <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                            <textarea name="message" class="form-control required" id="text-area" placeholder="Message" oninput="messageValidate()" required></textarea>
+                                            <span class="span-required text-danger padd-15">Preencha esse campo antes de enviar</span>
                                         </div>
                                     </div>
                                     <!-- Form Item 4 End -->
 
                                     <!-- Form Item 5 Start -->
                                     <div class="form-item padd-15 col-12">
-                                        <button type="submit" class="btn-hire-me">Send Message<button>
+                                        <button type="submit" class="btn-hire-me" onclick="submitValidate()">Send Message<button>
                                     </div>
                                     <!-- Form Item 5 End -->
                                 </form>
