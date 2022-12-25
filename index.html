@@ -13,7 +13,7 @@
         <main class="main-container">
             <aside class="aside">
                 <div class="logo">
-                    <a href="#">ES-DEV</a>
+                    <a href="#">ES<span>-DEV</span></a>
                 </div>
 
                 <!-- Menu Button Start -->
@@ -26,33 +26,33 @@
 
                 <!-- Nav Menu Start -->
                 <ul class="nav-aside">
-                    <li>
-                        <a href="#home" class="active">
+                    <li onclick="activeOn('home')">
+                        <a href="#home" class="home active">
                             <i class="fa-solid fa-house"></i> <span>Home</span>
                         </a>
                     </li>
     
     
-                    <li>
-                        <a href="#about">
+                    <li onclick="activeOn('about')">
+                        <a href="#about" class="about">
                             <i class="fa-solid fa-user"></i> <span>About</span>
                         </a>
                     </li>
     
-                    <li>
-                        <a href="#services">
+                    <li onclick="activeOn('services')">
+                        <a href="#services" class="services">
                             <i class="fa-solid fa-list"></i> <span>Services</span>
                         </a>
                     </li>
     
-                    <li>
-                        <a href="#portfolio">
+                    <li onclick="activeOn('portfolio')">
+                        <a href="#portfolio" class="portfolio">
                             <i class="fa-solid fa-briefcase"></i> <span>Portfolio</span>
                         </a>
                     </li>
     
-                    <li>
-                        <a href="#contact">
+                    <li onclick="activeOn('contact')">
+                        <a href="#contact" class="contact">
                             <i class="fa-solid fa-comment"></i> <span>Contact</span>
                         </a>
                     </li>
@@ -75,7 +75,7 @@
                                     Hello, my name is <span class="name">Erik Silva</span>
                                 </h3>
 
-                                <h3 class="my-profession">I'm a <span>Web Developer</span></h3>
+                                <h3 class="my-profession">I'm a <span class="typing">Web Developer</span></h3>
 
                                 <p>
                                     I'm a web developer front-end with experience in HTML, CSS, SASS, Bootstrap, JavaScript
@@ -249,8 +249,8 @@
                                                         <h3 class="timeline-date">
                                                             <i class="fa-solid fa-calendar-days"></i> 2022 - 2023
                                                         </h3>
-                                                        <h4 class="timeline-title">Curso Desenvolvimento Web Completo</h4>
-                                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusantium iusto ratione mollitia ipsam minima quo illo doloribus cum consectetur modi sit aut, dignissimos non amet cumque explicabo corporis pariatur!</p>
+                                                        <h4 class="timeline-title">Complete Web Development Course</h4>
+                                                        <p class="timeline-text">Domine Web - 20 Courses - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP 7, OO, MySQL, JQuery, MVC, APIs, IONIC and much more</p>
                                                     </div>
                                                     <!-- Timline Item One End-->
 
@@ -260,8 +260,8 @@
                                                         <h3 class="timeline-date">
                                                             <i class="fa-solid fa-calendar-days"></i> 2022 - 2022
                                                         </h3>
-                                                        <h4 class="timeline-title">Curso de JavaScript</h4>
-                                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusantium iusto ratione mollitia ipsam minima quo illo doloribus cum consectetur modi sit aut, dignissimos non amet cumque explicabo corporis pariatur!</p>
+                                                        <h4 class="timeline-title">JavaScript Course</h4>
+                                                        <p class="timeline-text">In this course I learned the basics and best practices of JavaScript, such as functions, events, recursion loops, and more</p>
                                                     </div>
                                                     <!-- Timline Item Two End-->
 
@@ -271,8 +271,8 @@
                                                         <h3 class="timeline-date">
                                                             <i class="fa-solid fa-calendar-days"></i> 2022 - 2022
                                                         </h3>
-                                                        <h4 class="timeline-title">Curso de Algoritmos e Lógica de Programação</h4>
-                                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusantium iusto ratione mollitia ipsam minima quo illo doloribus cum consectetur modi sit aut, dignissimos non amet cumque explicabo corporis pariatur!</p>
+                                                        <h4 class="timeline-title">Algorithms and Logic Programming Course</h4>
+                                                        <p class="timeline-text">This course covers the concepts of programming logic and algorithms with the Portugol Studio tool</p>
                                                     </div>
                                                     <!-- Timline Item Three End-->
 
@@ -282,8 +282,8 @@
                                                         <h3 class="timeline-date">
                                                             <i class="fa-solid fa-calendar-days"></i> 2021 - 2022
                                                         </h3>
-                                                        <h4 class="timeline-title">Curso de HTML5 e CSS3</h4>
-                                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusantium iusto ratione mollitia ipsam minima quo illo doloribus cum consectetur modi sit aut, dignissimos non amet cumque explicabo corporis pariatur!</p>
+                                                        <h4 class="timeline-title">HTML5 and CSS3 Course</h4>
+                                                        <p class="timeline-text">In this course I learned about HTML5 tags, CSS3, semantics, responsiveness, mobile first, forms, site performance and animations</p>
                                                     </div>
                                                     <!-- Timline Item Four End-->
                                                 </div>
@@ -359,7 +359,7 @@
 
                         <div class="row">
                             <!-- Service Item one Start -->
-                            <div class="service-item padd-15">
+                            <div class="service-item padd-15 m-auto">
                                 <div class="service-item-inner">
                                     <div class="icon">
                                         <i class="fa-solid fa-laptop-code"></i>
@@ -367,14 +367,14 @@
 
                                     <h4>Web Developer</h4>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odio excepturi ex.
+                                        Development with HTML, CSS, JavaScript, SASS and Bootstrap
                                     </p>
                                 </div>
                             </div>
                             <!-- Service Item one End -->
 
                             <!-- Service Item two Start -->
-                            <div class="service-item padd-15">
+                            <div class="service-item padd-15 m-auto d-none">
                                 <div class="service-item-inner">
                                     <div class="icon">
                                         <i class="fa-solid fa-palette"></i>
@@ -408,7 +408,9 @@
                                 <!-- Portfolio Item 1 Start -->
                                 <div class="portfolio-item">
                                     <div class="portfolio-img">
-                                        <img src="./assets/img/portfolio-1.jpg" alt="">
+                                        <a href="https://erik-sillva.github.io/projeto-gow-ragnarok/" target="_blank">
+                                            <img src="./assets/img/projeto-gow.jpg" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <!-- Portfolio Item 1 End -->
@@ -416,7 +418,9 @@
                                 <!-- Portfolio Item 2 Start -->
                                 <div class="portfolio-item">
                                     <div class="portfolio-img">
-                                        <img src="./assets/img/portfolio-2.jpg" alt="">
+                                        <a href="https://erik-sillva.github.io/projeto-guessnumber/" target="_blank">
+                                            <img src="./assets/img/projeto-guessnumber.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <!-- Portfolio Item 2 End -->
@@ -426,7 +430,9 @@
                                 <!-- Portfolio Item 3 Start -->
                                 <div class="portfolio-item">
                                     <div class="portfolio-img">
-                                        <img src="./assets/img/portfolio-3.jpg" alt="">
+                                        <a href="https://erik-sillva.github.io/projeto-stardevs/" target="_blank">
+                                            <img src="./assets/img/projeto-stardevs.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <!-- Portfolio Item 3 End -->
@@ -434,7 +440,9 @@
                                 <!-- Portfolio Item 4 Start -->
                                 <div class="portfolio-item">
                                     <div class="portfolio-img">
-                                        <img src="./assets/img/portfolio-4.jpg" alt="">
+                                        <a href="https://erik-sillva.github.io/projeto-relogio-digital/" target="_blank">
+                                            <img src="./assets/img/projeto-relogio.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <!-- Portfolio Item 4 End -->
@@ -588,6 +596,7 @@
             </div>
         </div>
         <!-- Sytle Switcher End -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/06dbd9c6a8.js" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
