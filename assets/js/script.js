@@ -1,8 +1,28 @@
+let menutoggle = document.querySelector('.toggle');
+let aside = document.querySelector('.aside');
+
+console.log(aside.clientWidth);
+
+menutoggle.addEventListener("click", () => {
+    menutoggle.classList.toggle('active-menu');
+
+    if (window.screen.width <= 1000) {
+        if (menutoggle.classList.contains('active-menu')) {
+            aside.style.left = '0'
+        } else {
+            aside.style.left = '-10em'
+        }
+    }
+});
+
+
 // Toggle Style Swticher //
 const styleSwitcherToggle = document.querySelector('.style-switcher-toggler');
 styleSwitcherToggle.addEventListener("click", () => {
     document.querySelector(".style-switcher").classList.toggle("open");
 })
+
+// Section Check //
 
 function activeOn(on) {
     let home = document.querySelector('.home');
@@ -111,16 +131,16 @@ const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
 function setsucces(index) {
     if (index == 0) {
-        inputs[0].style.border = '2px solid green'
+        inputs[0].style.border = '2px solid #198754'
         spans[0].style.display = 'none'
     } else if (index == 1){
-        inputs[1].style.border = '2px solid green'
+        inputs[1].style.border = '2px solid #198754'
         spans[1].style.display = 'none'
     } else if (index == 2){
-        inputs[2].style.border = '2px solid green'
+        inputs[2].style.border = '2px solid #198754'
         spans[2].style.display = 'none'
     } else if (index == 3){
-        inputs[3].style.border = '2px solid green'
+        inputs[3].style.border = '2px solid #198754'
         spans[3].style.display = 'none'
     }
 }
@@ -130,13 +150,13 @@ function setErro(index) {
         inputs[0].style.borderColor = '#dc3545'
         spans[0].style.display = 'block'
     } else if (index == 1){
-        inputs[1].style.borderColor = '#dc3545'
+        inputs[1].style.border = '2px solid #dc3545'
         spans[1].style.display = 'block'
     } else if (index == 2){
-        inputs[2].style.borderColor = '#dc3545'
+        inputs[2].style.border = '2px solid #dc3545'
         spans[2].style.display = 'block'
     } else if (index == 3){
-        inputs[3].style.borderColor = '#dc3545'
+        inputs[3].style.border = '2px solid #dc3545'
         spans[3].style.display = 'block'
     }
 }
