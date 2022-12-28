@@ -1,7 +1,6 @@
+// Toggle Menu //
 let menutoggle = document.querySelector('.toggle');
 let aside = document.querySelector('.aside');
-
-console.log(aside.clientWidth);
 
 menutoggle.addEventListener("click", () => {
     menutoggle.classList.toggle('active-menu');
@@ -15,6 +14,12 @@ menutoggle.addEventListener("click", () => {
     }
 });
 
+// Hidden Sidebar Click //
+function hiddenSidebar() {
+    aside.style.left = '-10em'
+    menutoggle.classList.remove('active-menu');
+}
+
 
 // Toggle Style Swticher //
 const styleSwitcherToggle = document.querySelector('.style-switcher-toggler');
@@ -23,7 +28,6 @@ styleSwitcherToggle.addEventListener("click", () => {
 })
 
 // Section Check //
-
 function activeOn(on) {
     let home = document.querySelector('.home');
     let about = document.querySelector('.about');
