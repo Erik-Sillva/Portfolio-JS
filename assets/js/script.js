@@ -16,8 +16,11 @@ menutoggle.addEventListener("click", () => {
 
 // Hidden Sidebar Click //
 function hiddenSidebar() {
-    aside.style.left = '-10em'
-    menutoggle.classList.remove('active-menu');
+
+    if (window.screen.width <= 1000) {
+        aside.style.left = '-10em'
+        menutoggle.classList.remove('active-menu');
+    }
 }
 
 
