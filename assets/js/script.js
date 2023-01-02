@@ -23,7 +23,6 @@ function hiddenSidebar() {
     }
 }
 
-
 // Toggle Style Swticher //
 const styleSwitcherToggle = document.querySelector('.style-switcher-toggler');
 styleSwitcherToggle.addEventListener("click", () => {
@@ -134,7 +133,7 @@ let typed = new Typed('.typing', {
 const form = document.querySelector('#form');
 const inputs = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
-const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+const emailRegex = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)$/;
 
 function setsucces(index) {
     if (index == 0) {
