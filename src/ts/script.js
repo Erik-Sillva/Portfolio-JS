@@ -246,6 +246,7 @@ let translations = {
         messagesObj: 'Mensagem',
         spanerroObj: 'Preencha este campo antes de enviar',
         emailerroObj: 'Digite um endereço de e-mail válido',
+        sendmessageObj: 'Enviar mensagem',
         //settings
         themeObj: 'Cores do Tema',
         colorObj: 'Cor:',
@@ -308,6 +309,7 @@ let translations = {
         messagesObj: 'Message',
         spanerroObj: 'Fill this field before sending',
         emailerroObj: 'Enter a valid email address',
+        sendmessageObj: 'Send Message',
         //settings
         themeObj: 'Theme Colors',
         colorObj: 'Color:',
@@ -370,6 +372,7 @@ let translations = {
         messagesObj: 'Mensaje',
         spanerroObj: 'Rellena este campo antes de enviar',
         emailerroObj: 'Introduzca una dirección de correo electrónico válida',
+        sendmessageObj: 'Enviar mensaje',
         //settings
         themeObj: 'Colores del Tema',
         colorObj: 'Color:',
