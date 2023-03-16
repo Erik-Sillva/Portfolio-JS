@@ -29,42 +29,40 @@
                 <!-- Logo End -->
 
                 <!-- Nav Menu Start -->
-                <ul class="nav-aside">
-                    <li class="li-sec" onclick="activeOn('home'), hiddenSidebar()">
-                        <a href="#home" class="home active aside-link" aria-labelledby="home">
-                            <i class="fa-solid fa-house"></i> <span class="link-span
-                            " id="home">Home</span>
-                        </a>
-                    </li>
-    
-                    <li class="li-sec" onclick="activeOn('about'), hiddenSidebar()">
-                        <a href="#about" class="about aside-link" aria-labelledby="about">
-                            <i class="fa-solid fa-user"></i> <span class="link-span
-                            " id="about">About</span>
-                        </a>
-                    </li>
-    
-                    <li class="li-sec" onclick="activeOn('services'), hiddenSidebar()">
-                        <a href="#services" class="services aside-link" aria-labelledby="services">
-                            <i class="fa-solid fa-list"></i> <span class="link-span
-                            " id="services">Services</span>
-                        </a>
-                    </li>
-    
-                    <li class="li-sec" onclick="activeOn('portfolio'), hiddenSidebar()">
-                        <a href="#portfolio" class="portfolio aside-link" aria-labelledby="portfolio">
-                            <i class="fa-solid fa-briefcase"></i> <span class="link-span
-                            " id="portfolio">Portfolio</span>
-                        </a>
-                    </li>
-    
-                    <li class="li-sec" onclick="activeOn('contact'), hiddenSidebar()">
-                        <a href="#contact" class="contact aside-link" aria-labelledby="contact">
-                            <i class="fa-solid fa-comment"></i> <span class="link-span
-                            " id="contact">Contact</span>
-                        </a>
-                    </li>
-                </ul>
+                <nav id="nav">
+                    <ul class="nav-aside">
+                        <li class="li-sec" onclick="activeOn('home'), hiddenSidebar()">
+                            <a href="#home" class="home active aside-link" aria-labelledby="home">
+                                <i class="fa-solid fa-house"></i> <span class="link-span
+                                " id="homeObj">Home</span>
+                            </a>
+                        </li>
+                        <li class="li-sec" onclick="activeOn('about'), hiddenSidebar()">
+                            <a href="#about" class="about aside-link" aria-labelledby="about">
+                                <i class="fa-solid fa-user"></i> <span class="link-span
+                                " id="aboutObj">About</span>
+                            </a>
+                        </li>
+                        <li class="li-sec" onclick="activeOn('services'), hiddenSidebar()">
+                            <a href="#services" class="services aside-link" aria-labelledby="services">
+                                <i class="fa-solid fa-list"></i> <span class="link-span
+                                " id="servicesObj">Services</span>
+                            </a>
+                        </li>
+                        <li class="li-sec" onclick="activeOn('portfolio'), hiddenSidebar()">
+                            <a href="#portfolio" class="portfolio aside-link" aria-labelledby="portfolio">
+                                <i class="fa-solid fa-briefcase"></i> <span class="link-span
+                                " id="portfolioObj">Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="li-sec" onclick="activeOn('contact'), hiddenSidebar()">
+                            <a href="#contact" class="contact aside-link" aria-labelledby="contact">
+                                <i class="fa-solid fa-comment"></i> <span class="link-span
+                                " id="contactObj">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
                 <!-- Nav Menu End -->
             </aside>
 
@@ -74,19 +72,19 @@
                 <section class="home section padd-15" id="home">
                     <div class="container">
                         <div class="row padd-15">
-                            <h2 class="section-title padd-15 wellcome" aria-labelledby="wellcome">Wellcome</h2>
+                            <h2 id="titleObj" class="section-title padd-15 wellcome" aria-labelledby="welcome">Welcome</h2>
                         </div>
 
                         <div class="row">
                             <div class="home-info">
                                 <h3 class="hello" aria-labelledby="Hello, my name is Erik Silva">
-                                    Hello, my name is <span class="name">Erik Silva</span>
+                                    <span id="subtitleObj">Hello, my name is</span> <span class="name">Erik Silva</span>
                                 </h3>
 
-                                <h3 class="my-profession" aria-labelledby="i'm a web developer and web designer">I'm a <span class="typing">Web Developer</span></h3>
+                                <h3 class="my-profession" aria-labelledby="i'm a web developer and web designer"><span id="professionObj">I'm</span> <span class="typing">Web Developer</span></h3>
 
-                                <p aria-labelledby="i'm a web developer front-end with experience in html, css, sass, bootstrap, javascript e typescript">
-                                    I'm a web developer front-end with experience in HTML, CSS, SASS, Bootstrap, JavaScript e TypeScript
+                                <p id="professiondescObj" aria-labelledby="i'm a web developer front-end with experience in html, css, sass, bootstrap, javascript and typescript">
+                                    I'm web developer front-end with experience in HTML, CSS, SASS, Bootstrap, JavaScript and TypeScript
                                 </p>
                             </div>
 
@@ -102,17 +100,17 @@
                 <section class="about section" id="about">
                     <div class="container">
                         <div class="row padd-15">
-                            <h2 class="section-title padd-15" aria-labelledby="about me">About Me</h2>
+                            <h2 id="titleaboutObj" class="section-title padd-15" aria-labelledby="about me">About Me</h2>
                         </div>
 
                         <div class="row">
                             <div class="about-content">
                                 <div class="row">
                                     <div class="about-text padd-15">
-                                        <h3 aria-labelledby="i'm erik silva and web developer">Erik Silva - <span>Web Developer</span></h3>
+                                        <h3 aria-labelledby="i'm erik silva and web developer">Erik Silva - <span id="descriptionObj">Web Developer</span></h3>
     
-                                        <p aria-labelledby="i am brazilian and since i was very young i have always been interested in the IT area, today i am looking to deepen my knowledge even more and i am in constant evolution, both professionally and personally. i always give my best in what i do, because i value the quality of my work and the satisfaction of my clients">
-                                            I am Brazilian and since I was very young I have always been interested in the IT area, today I am looking to deepen my knowledge even more and I am in constant evolution, both professionally and personally. I always give my best in what I do, because I value the quality of my work and the satisfaction of my clients.
+                                        <p id="bioObj" aria-labelledby="I'm Brazilian and since I was very young I have always been interested in the IT area, today I am looking to deepen my knowledge even more and I am in constant evolution, both professionally and personally. I always give my best in what I do, because I value the quality of my work and the satisfaction of my clients.">
+                                            I'm Brazilian and since I was very young I have always been interested in the IT area, today I am looking to deepen my knowledge even more and I am in constant evolution, both professionally and personally. I always give my best in what I do, because I value the quality of my work and the satisfaction of my clients.
                                         </p>
                                     </div>
                                 </div>
@@ -123,25 +121,25 @@
                                             <div class="container-inner-item">
                                                 <div class="info-item padd-15">
                                                     <p aria-labelledby="birth date">
-                                                        Birthday : <span aria-labelledby="02 july 2004">02 jul 2004</span>
+                                                        <span id="birthdayObj">Birthday</span> : <span class="data" aria-labelledby="02 july 2004">02 jul 2004</span>
                                                     </p>
                                                 </div>
 
                                                 <div class="info-item padd-15">
                                                     <p aria-labelledby="age">
-                                                        Age : <span aria-labelledby="18">18</span>
+                                                        <span id="ageObj">Age</span> : <span class="data" aria-labelledby="18">18</span>
                                                     </p>
                                                 </div>
                                 
                                                 <div class="info-item padd-15">
                                                     <p aria-labelledby="github">
-                                                        Github : <span><a href="https://github.com/Erik-Sillva" aria-labelledby="github.com/Erik-Sillva">github.com/Erik-Sillva</a></span>
+                                                        <span id="githubObj">Github</span> : <span class="data"><a href="https://github.com/Erik-Sillva" aria-labelledby="github.com/Erik-Sillva">github.com/Erik-Sillva</a></span>
                                                     </p>
                                                 </div>
 
                                                 <div class="info-item padd-15">
                                                     <p aria-labelledby="email">
-                                                        Email : <span aria-labelledby="eriksilva.developer@gmail.com">eriksilva.developer@gmail.com</span>
+                                                        <span id="emailObj">Email</span> : <span class="data" aria-labelledby="eriksilva.developer@gmail.com">eriksilva.developer@gmail.com</span>
                                                     </p>
                                                 </div>
                                             </div>
@@ -149,19 +147,19 @@
                                             <div class="container-inner-item">
                                                 <div class="info-item padd-15">
                                                     <p aria-labelledby="phone">
-                                                        Phone : <span aria-labelledby="+55 87 999929262">+55 87 999929262</span>
+                                                        <span id="phoneObj">Phone</span> : <span class="data" aria-labelledby="+55 87 999929262">+55 87 999929262</span>
                                                     </p>
                                                 </div>
                                     
                                                 <div class="info-item padd-15">
                                                     <p aria-labelledby="city">
-                                                        City : <span aria-labelledby="Trindade, Pernambuco, Brazil">Trindade, Pernambuco, Brazil</span>
+                                                        <span id="cityObj">City</span> : <span class="data" aria-labelledby="Trindade, Pernambuco, Brazil">Trindade, Pernambuco, Brazil</span>
                                                     </p>
                                                 </div>
                                     
                                                 <div class="info-item padd-15">
                                                     <p aria-labelledby="freelance">
-                                                        Freelance : <span aria-labelledby="available">Available</span>
+                                                        <span id="freelanceObj">Freelance</span> : <span class="data" aria-labelledby="available">Available</span>
                                                     </p>
                                                 </div>
                                             </div>
@@ -169,8 +167,8 @@
 
                                         <div class="row">
                                             <div class="buttons d-flex padd-15">
-                                                <a href="./assets/pdf/mycv.pdf" download="Currículo-Erik Silva" class="btn-hire-me" aria-labelledby="download cv">Download CV</a>
-                                                <a href="#contact" class="btn-hire-me hire-me" aria-labelledby="hire me">Hire Me</a>
+                                                <a id="downloadCVObj" href="./assets/pdf/mycv.pdf" download="Currículo-Erik Silva" class="btn-hire-me" aria-labelledby="download cv">Download CV</a>
+                                                <a id="hireMeObj" href="#contact" class="btn-hire-me hire-me" aria-labelledby="hire me">Hire Me</a>
                                             </div>
                                         </div>
                                     </div>
@@ -260,7 +258,7 @@
 
                                 <div class="row d-flex">
                                     <div class="education padd-15 m-auto mt-4">
-                                        <h3 class="title" aria-labelledby="education">Education</h3>
+                                        <h3 id="educationObj" class="title" aria-labelledby="education">Education</h3>
                                         <div class="row">
                                             <div class="timeline-box">
                                                 <div class="timeline">
@@ -270,8 +268,8 @@
                                                         <h3 class="timeline-date" aria-labelledby="from 2023 to 2023">
                                                             <i class="fa-solid fa-calendar-days"></i> 2023 - 2023
                                                         </h3>
-                                                        <h4 class="timeline-title" aria-labelledby="typeScript course">TypeScript course</h4>
-                                                        <p class="timeline-text" aria-labelledby="Complete TypeScript course from basics to advanced, with more than 70 lessons">Complete TypeScript course from basics to advanced, with more than 70 lessons</p>
+                                                        <h4 id="typescriptObj" class="timeline-title" aria-labelledby="typeScript course">TypeScript course</h4>
+                                                        <p id="typescriptdescObj" class="timeline-text" aria-labelledby="Complete TypeScript course from basics to advanced, with more than 70 lessons">Complete TypeScript course, from basic to advanced, with over 70 lessons</p>
                                                     </div>
                                                     <!-- Timline Item One Start-->
 
@@ -281,8 +279,8 @@
                                                         <h3 class="timeline-date" aria-labelledby="from 2022 to 2023">
                                                             <i class="fa-solid fa-calendar-days"></i> 2022 - 2023
                                                         </h3>
-                                                        <h4 class="timeline-title" aria-labelledby="complete web development course">Complete Web Development Course</h4>
-                                                        <p class="timeline-text" aria-labelledby="domine web - 20 courses - html5, css3, sass, bootstrap, js, es6, php 7, oo, mysql, jquery, mvc, apis, ionic and much more">Domine Web - 20 Courses - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP 7, OO, MySQL, JQuery, MVC, APIs, IONIC and much more</p>
+                                                        <h4 id="webdevObj" class="timeline-title" aria-labelledby="complete web development course">Complete Web Development Course</h4>
+                                                        <p id="webdevdescObj" class="timeline-text" aria-labelledby="domine web - 20 courses - html5, css3, sass, bootstrap, js, es6, php 7, oo, mysql, jquery, mvc, apis, ionic and much more">Master Web - 20 courses - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP 7, OO, MySQL, JQuery, MVC, APIs, IONIC and much more</p>
                                                     </div>
                                                     <!-- Timline Item Two End-->
 
@@ -292,8 +290,8 @@
                                                         <h3 class="timeline-date" aria-labelledby="from 2022 to 2022">
                                                             <i class="fa-solid fa-calendar-days"></i> 2022 - 2022
                                                         </h3>
-                                                        <h4 class="timeline-title" aria-labelledby="JavaScript Course">javaScript course</h4>
-                                                        <p class="timeline-text" aria-labelledby="in this course i learned the basics and best practices of JavaScript, such as functions, events, recursion loops, and more">In this course I learned the basics and best practices of JavaScript, such as functions, events, recursion loops, and more</p>
+                                                        <h4 id="javascriptObj" class="timeline-title" aria-labelledby="JavaScript Course">javaScript course</h4>
+                                                        <p id="javascriptdescObj" class="timeline-text" aria-labelledby="in this course i learned the basics and best practices of JavaScript, such as functions, events, recursion loops, and more">In this course, I learned the basics and best practices of JavaScript, such as functions, events, recursion loops, and much more</p>
                                                     </div>
                                                     <!-- Timline Item Three End-->
 
@@ -303,8 +301,8 @@
                                                         <h3 class="timeline-date" aria-labelledby="from 2022 to 2022">
                                                             <i class="fa-solid fa-calendar-days"></i> 2022 - 2022
                                                         </h3>
-                                                        <h4 class="timeline-title" aria-labelledby="algorithms and logic programming course">Algorithms and Logic Programming Course</h4>
-                                                        <p class="timeline-text" aria-labelledby="this course covers the concepts of programming logic and algorithms with the Portugol Studio tool">This course covers the concepts of programming logic and algorithms with the Portugol Studio tool</p>
+                                                        <h4 id="algorithmsObj" class="timeline-title" aria-labelledby="algorithms and logic programming course">Algorithms And Programming Logic Course</h4>
+                                                        <p id="algorithmsdescObj" class="timeline-text" aria-labelledby="this course covers the concepts of programming logic and algorithms with the Portugol Studio tool">This course covers programming logic and algorithms concepts with the Portugol Studio tool</p>
                                                     </div>
                                                     <!-- Timline Item Four End-->
 
@@ -314,8 +312,8 @@
                                                         <h3 class="timeline-date" aria-labelledby="from 2021 to 2022">
                                                             <i class="fa-solid fa-calendar-days"></i> 2021 - 2022
                                                         </h3>
-                                                        <h4 class="timeline-title" aria-labelledby="html5 and css3 course">HTML5 and CSS3 Course</h4>
-                                                        <p class="timeline-text" aria-labelledby="in this course i learned about HTML5 tags, CSS3, semantics, responsiveness, mobile first, forms, site performance and animations">In this course I learned about HTML5 tags, CSS3, semantics, responsiveness, mobile first, forms, site performance and animations</p>
+                                                        <h4 id="htmlcssObj" class="timeline-title" aria-labelledby="html5 and css3 course">HTML5 and CSS3 Course</h4>
+                                                        <p id="htmlcssdescObj" class="timeline-text" aria-labelledby="in this course i learned about HTML5 tags, CSS3, semantics, responsiveness, mobile first, forms, site performance and animations">In this course, I learned about HTML5 tags, CSS3, semantics, responsiveness, mobile-first, forms, site performance, and animations</p>
                                                     </div>
                                                     <!-- Timline Item Five End-->
                                                 </div>
@@ -386,7 +384,7 @@
                 <section class="services section" id="services">
                     <div class="container">
                         <div class="row padd-15">
-                            <h2 class="section-title padd-15" aria-labelledby="services">Services</h2>
+                            <h2 id="titleservicesObj" class="section-title padd-15" aria-labelledby="services">Services</h2>
                         </div>
 
                         <div class="row">
@@ -397,9 +395,9 @@
                                         <i class="fa-solid fa-laptop-code"></i>
                                     </div>
 
-                                    <h4 aria-labelledby="web developer">Web Developer</h4>
-                                    <p aria-labelledby="Development with HTML, CSS, JavaScript, SASS, Bootstrap and TypeScript">
-                                        Development with HTML, CSS, JavaScript, SASS, Bootstrap and TypeScript
+                                    <h4 id="descriptionservicesObj" aria-labelledby="web developer">Web Developer</h4>
+                                    <p id="detailsObj" aria-labelledby="Development with HTML, CSS, JavaScript, SASS, Bootstrap and TypeScript">
+                                        Development with HTML, CSS, JavaScript, SASS, Bootstrap, and TypeScript
                                     </p>
                                 </div>
                             </div>
@@ -428,11 +426,11 @@
                 <section class="portfolio section" id="portfolio">
                     <div class="container">
                         <div class="row padd-15">
-                            <h2 class="section-title padd-15" aria-labelledby="portfolio">Portfolio</h2>
+                            <h2 id="titleportfolioObj" class="section-title padd-15" aria-labelledby="portfolio">Portfolio</h2>
                         </div>
 
                         <div class="row padd-15">
-                            <h2 class="portfolio-heading padd-15" aria-labelledby="my last projects">My Last Projects:</h2>
+                            <h2 id="projectsObj" class="portfolio-heading padd-15" aria-labelledby="my latest projects">My Latest Projects:</h2>
                         </div>
 
                         <div class="row  padd-15 d-flex">
@@ -488,15 +486,15 @@
                 <section class="contact section" id="contact">
                     <div class="container">
                         <div class="row padd-15">
-                            <h2 class="section-title padd-15" aria-labelledby="contact me">Contact Me</h2>
+                            <h2 id="titlecontactObj" class="section-title padd-15" aria-labelledby="contact me">Contact</h2>
                         </div>
 
                         <!-- Row First Titles Start -->
                         <div class="row padd-15">
                             <div class="contact-titles">
-                                <h3 class="contact-title" aria-labelledby="have you any questions?">have you any questions ?</h3>
+                                <h3 id="subtitlecontactObj" class="contact-title" aria-labelledby="have you any questions?">Have any questions ?</h3>
 
-                                <h4 class="contact-sub-title" aria-labelledby="i'm at your services">i'm at your services</h4>
+                                <h4 id="messageObj" class="contact-sub-title" aria-labelledby="i'm at your services">I am at your disposal</h4>
                             </div>
                         </div>
                         <!-- Row First Titles End -->
@@ -507,7 +505,7 @@
                                 <!-- Contact Info Item 1 Start -->
                                 <div class="contact-info-item">
                                     <i class="fa-solid fa-phone"></i>
-                                    <h4 aria-labelledby="call us on">Call Us On</h4>
+                                    <h4 id="callObj" aria-labelledby="call us on">Call Me</h4>
                                     <p aria-labelledby="+55 87999929262">+55 87999929262</p>
                                 </div>
                                 <!-- Contact Info Item 1 End -->
@@ -527,7 +525,7 @@
                                     <i class="fa-brands fa-linkedin"></i>
                                     <h4 aria-labelledby="linkedin">LinkedIn</h4>
                                     <p>
-                                        <a href="https://www.linkedin.com/in/erik-silva-601ab8240/" aria-labelledby="click here to access my linkedin profile">Click here<a>
+                                        <a href="https://www.linkedin.com/in/erik-silva-601ab8240/" class="clickhereObj" aria-labelledby="click here to access my linkedin profile">Click Here<a>
                                     </p>
                                 </div>
                                 <!-- Contact Info Item 3 End -->
@@ -537,7 +535,7 @@
                                     <i class="fa-solid fa-link"></i>
                                     <h4 aria-labelledby="linktree">LinkTree</h4>
                                     <p>
-                                        <a href="https://linktr.ee/erik.__silva" aria-labelledby="click here to access my linktree and access my profiles on social networks and more ways to get in touch">Click here</a>
+                                        <a href="https://linktr.ee/erik.__silva" class="clickhereObj" aria-labelledby="click here to access my linktree and access my profiles on social networks and more ways to get in touch">Click Here</a>
                                     </p>
                                 </div>
                                 <!-- Contact Info Item 4 End -->
@@ -548,8 +546,8 @@
                         <!-- Row Second Titles Start -->
                         <div class="row">
                             <div class="contact-titles">
-                                <h3 class="contact-title" aria-labelledby="send me an email">send me an email</h3>
-                                <h4 class="contact-sub-title" aria-labelledby="i'm very resposive to messages">i'm very resposive to messages</h4>
+                                <h3 id="emailcontactObj" class="contact-title" aria-labelledby="send me an email">send me an email</h3>
+                                <h4 id="emailmessageObj" class="contact-sub-title" aria-labelledby="i'm very resposive to messages">i'm very responsive to messages</h4>
                             </div>
                         </div>
                         <!-- Row Second Titles End -->
@@ -566,7 +564,7 @@
                                         <div class="form-item col-6">
                                             <div class="form-group">
                                                 <input type="text" name="name" class="form-control required" id="name" placeholder="Name" oninput="validate('0')" aria-label="name" required>
-                                                <span class="span-required text-danger padd-15" aria-labelledby="fill this field before sending">Fill this field before sending</span>
+                                                <span class="span-required spanerroObj text-danger padd-15" aria-labelledby="fill this field before sending">Fill this field before sending</span>
                                             </div>
                                         </div>
                                         <!-- Form Item 1 End -->
@@ -575,7 +573,7 @@
                                         <div class="form-item col-6">
                                             <div class="form-group">
                                                 <input type="email" name="email" class="form-control required" id="email" placeholder="Email" oninput="emailValidate()" aria-label="email" required>
-                                                <span class="span-required text-danger padd-15" aria-labelledby="enter a valid email address">Enter a valid email address</span>
+                                                <span id="emailerroObj" class="span-required text-danger padd-15" aria-labelledby="enter a valid email address">Enter a valid email address</span>
                                             </div>
                                         </div>
                                         <!-- Form Item 2 End -->
@@ -585,7 +583,7 @@
                                     <div class="form-item padd-15 col-12">
                                         <div class="form-group">
                                             <input type="text" name="subject" id="subject" class="form-control required" placeholder="Subject" oninput="validate('2')" aria-label="subject" required>
-                                            <span class="span-required text-danger padd-15" aria-labelledby="fill this field before sending">Fill this field before sending</span>
+                                            <span class="span-required spanerroObj text-danger padd-15" aria-labelledby="fill this field before sending">Fill this field before sending</span>
                                         </div>
                                     </div>
                                     <!-- Form Item 3 End -->
@@ -594,7 +592,7 @@
                                     <div class="form-item padd-15 col-12">
                                         <div class="form-group">
                                             <textarea name="message" class="form-control required" id="text-area" placeholder="Message" oninput="messageValidate('3')" aria-label="message" required></textarea>
-                                            <span class="span-required text-danger padd-15" aria-labelledby="fill this field before sending">Fill this field before sending</span>
+                                            <span class="span-required spanerroObj text-danger padd-15" aria-labelledby="fill this field before sending">Fill this field before sending</span>
                                         </div>
                                     </div>
                                     <!-- Form Item 4 End -->
@@ -626,7 +624,7 @@
             </div>
 
             <div class="container-colors">
-                <h4 aria-labelledby="theme colors">Theme Colors</h4>
+                <h4 id="themeObj" aria-labelledby="theme colors">Theme Colors</h4>
                 <div class="colors">
                     <span class="color-1" onclick="setActiveStyle('#ec1839')" aria-label="red"></span>
                     <span class="color-2" onclick="setActiveStyle('#fa5b0f')" aria-label="orange"></span>
@@ -635,23 +633,23 @@
                     <span class="color-5" onclick="setActiveStyle('#f021b2')" aria-label="pink"></span>
                 </div>
                 <div class="hexa-color">
-                    <label for="hexa-decimal">Color:</label>
+                    <label id="colorObj" for="hexa-decimal">Color:</label>
                     <input type="text" id="hexa-decimal" oninput="hexaColor()">
                 </div>
             </div>
 
             <div class="container-language mt-3">
-                <h4 aria-labelledby="Language">Language</h4>
+                <h4 id="languageObj" aria-labelledby="Language">Language</h4>
                 <div class="container-flags">
-                    <div class="flag br" onclick="setLanguage('pt')">
+                    <div class="flag br" onclick="updateTranslations('pt')">
                         <img src="../img/brasil.png" class="flag-br" alt="portugues do brasil">
                     </div>
 
-                    <div class="flag usa" onclick="setLanguage('en')">
+                    <div class="flag usa" onclick="updateTranslations('en')">
                         <img src="../img/usa.png" class="flag-usa" alt="ingles">
                     </div>
 
-                    <div class="flag es" onclick="setLanguage('es')">
+                    <div class="flag es" onclick="updateTranslations('es')">
                         <img src="../img/spain.png" class="flag-spain" alt="espanhol">
                     </div>
                 </div>
@@ -671,7 +669,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/06dbd9c6a8.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/i18next@22.4.4/dist/umd/i18next.min.js"></script>
-    <script src="./ts/script.js"></script>
-    <script src="./ts/typed.js"></script>
+    <script src="./ts/script.min.js"></script>
+    <script src="./ts/typed.min.js"></script>
 </body>
 </html>

@@ -250,9 +250,14 @@ body.dark {
                 font-weight: 600;
                 border-bottom: 1px solid var(--bg-black-50);
                 color: var(--text-black-900);
+                transition: .3s ease;
 
                 i {
                     margin-right: 15px;
+                }
+
+                &:hover {
+                    border-bottom-color: var(--skin-color);
                 }
             }
         }
@@ -306,7 +311,7 @@ body.dark {
                         margin: 15px 0;
                         color: var(--text-black-900);
 
-                        span {
+                        span.typing {
                             color: var(--skin-color);
                         }
                     }
@@ -407,7 +412,7 @@ body.dark {
                                             color: var(--text-black-900);
                                             border-bottom: 1px solid var(--bg-black-50);
         
-                                            span,a {
+                                            span.data,a {
                                                 display: inline-block;
                                                 margin-left: 0.4rem;
                                                 font-weight: 400;
@@ -869,6 +874,7 @@ body.dark {
                 width: 60%;
                 padding: 5px;
                 border-radius: 5px;
+                border: 2px solid var(--text-black-900);
                 box-sizing: border-box;
             }
         }

@@ -210,161 +210,312 @@ window.onload = calcScrollValue;
 // Idiomas
 
 interface Translations {
-    pt: {
-        nav: {
-            home: string;
-            about: string;
-            services: string;
-            portfolio: string;
-            contact: string;
-        },
-        // home: {
-        //     title: string;
-        //     subtitle: string;
-        //     profession: string;
-        // },
-        // about: {
-        //     title: string;
-        //     description: string;
-        //     bio: string;
-        //     birthday: string;
-        //     age: string;
-        //     github: string;
-        //     email: string;
-        //     phone: string;
-        //     city: string;
-        //     freelance: string;
-        //     downloadCV: string;
-        //     hireMe: string;
-        //     education: string;
-        //     courses: {
-        //         typescript: string;
-        //         typescriptdesc: string;
-        //         webdev: string;
-        //         webdevdesc: string;
-        //         javascript: string;
-        //         javascriptdesc: string;
-        //         algorithms: string;
-        //         algorithmsdesc: string;
-        //         htmlcss: string;
-        //         htmlcssdesc: string;                
-        //     }
-        // },
-        // services: {
-        //     title: string;
-        //     description: string;
-        //     details: string;
-        // },
-        // portfolio: {
-        //     title: string;
-        //     projects: string;
-        // },
-        // contact: {
-        //     title: string;
-        //     subtitle: string;
-        //     message: string;
-        //     call: string;
-        //     email: string;
-        //     name: string;
-        //     subject: string;
-        //     messages: string;
-        // },
-        // settings: {
-        //     theme: string;
-        //     color: string;
-        //     language: string;
-        // }
-    }
+    [key: string]: {
+        [key: string]: string;
+    };
+}
+
+interface TranslationKeys {
+    //nav
+    homeObj: string;
+    aboutObj: string;
+    servicesObj: string;
+    portfolioObj: string;
+    contactObj: string;
+
+    //home
+    titleObj: string;
+    subtitleObj: string;
+    professionObj: string;
+    professiondescObj: string;
+
+    //about
+    titleaboutObj: string;
+    descriptionObj: string;
+    bioObj: string;
+    birthdayObj: string;
+    ageObj: string;
+    githubObj: string;
+    emailObj: string;
+    phoneObj: string;
+    cityObj: string;
+    freelanceObj: string;
+    downloadCVObj: string;
+    hireMeObj: string;
+    educationObj: string;
+    typescriptObj: string;
+    typescriptdescObj: string;
+    webdevObj: string;
+    webdevdescObj: string;
+    javascriptObj: string;
+    javascriptdescObj: string;
+    algorithmsObj: string;
+    algorithmsdescObj: string;
+    htmlcssObj: string;
+    htmlcssdescObj: string;  
+
+    //services
+    titleservicesObj: string;
+    descriptionservicesObj: string;
+    detailsObj: string;
+
+    //portfolio
+    titleportfolioObj: string;
+    projectsObj: string;
+
+    //contact
+    titlecontactObj: string;
+    subtitlecontactObj: string;
+    messageObj: string;
+    callObj: string;
+    emailcontactObj: string;
+    emailmessageObj: string;
+    linksmessageObj: string;
+    nameObj: string;
+    subjectObj: string;
+    messagesObj: string;
+    spanerroObj: string;
+
+    //settings
+    themeObj: string;
+    colorObj: string;
+    languageObj: string;
 }
 
 let translations: Translations = {
     pt: {
-        nav: {
-            home: 'Início',
-            about: 'Sobre',
-            services: 'Serviços',
-            portfolio: 'Portfólio',
-            contact: 'Contato'
-        },
-        // home: {
-        //     title: 'Bem-vindo',
-        //     subtitle: 'Olá, meu nome é Erik Silva',
-        //     profession: 'Sou desenvolvedor front-end com experiência em HTML, CSS, SASS, Bootstrap, JavaScript e TypeScript'
-        // },
-        // about: {
-        //     title: 'Sobre Mim',
-        //     description: 'Erik Silva - Desenvolvedor Web',
-        //     bio: 'Sou brasileiro e desde muito jovem sempre me interessei pela área de TI, hoje busco aprofundar ainda mais meus conhecimentos e estou em constante evolução, tanto profissional quanto pessoal. Sempre dou o meu melhor no que faço, pois valorizo a qualidade do meu trabalho e a satisfação dos meus clientes.',
-        //     birthday: 'Data de Nascimento: 02 jul 2004',
-        //     age: 'Idade: 18',
-        //     github: 'Github: github.com/Erik-Sillva',
-        //     email: 'Email: eriksilva.developer@gmail.com',
-        //     phone: 'Telefone: +55 87 999929262',
-        //     city: 'Cidade: Trindade, Pernambuco, Brasil',
-        //     freelance: 'Freelancer: Disponível',
-        //     downloadCV: 'Baixar CV',
-        //     hireMe: 'Contrate-me',
-        //     education: 'Educação',
-        //     courses: {
-        //         typescript: 'Curso de TypeScript',
-        //         typescriptdesc: 'Curso completo de TypeScript, desde o básico até o avançado, com mais de 70 aulas',
-        //         webdev: 'Curso de Desenvolvimento Web Completo',
-        //         webdevdesc: 'Domine Web - 20 cursos - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP 7, OO, MySQL, JQuery, MVC, APIs, IONIC e muito mais',
-        //         javascript: 'Curso de JavaScript',
-        //         javascriptdesc: 'Neste curso aprendi o básico e as melhores práticas de JavaScript, como funções, eventos, loops de recursão e muito mais',
-        //         algorithms: 'Curso de Algoritmos e Lógica de Programação',
-        //         algorithmsdesc: 'Este curso abrange os conceitos de lógica de programação e algoritmos com a ferramenta Portugol Studio',
-        //         htmlcss: 'Curso de HTML5 e CSS3',
-        //         htmlcssdesc: 'Neste curso, aprendi sobre tags HTML5, CSS3, semântica, responsividade, mobile first, formulários, desempenho do site e animações'
-        //     }
-        // },
-        // services: {
-        //     title: 'Serviços',
-        //     description: 'Desenvolvedor Web',
-        //     details: 'Desenvolvimento com HTML, CSS, JavaScript, SASS, Bootstrap e TypeScript'
-        // },
-        // portfolio: {
-        //     title: 'Portfólio',
-        //     projects: 'Meus Últimos Projetos:'
-        // },
-        // contact: {
-        //     title: 'Entre em Contato',
-        //     subtitle: 'Tem alguma dúvida?',
-        //     message: 'Estou à sua disposição.',
-        //     call: 'Ligue para nós em',
-        //     email: 'Envie-nos um e-mail',
-        //     name: 'Nome',
-        //     subject: 'Assunto',
-        //     messages: 'Mensagem'
-        // },
-        // settings: {
-        //     theme: 'Cores do Tema',
-        //     color: 'Cor',
-        //     language: 'Idioma'
-        // }
+        //nav
+        homeObj: 'Início',
+        aboutObj: 'Sobre',
+        servicesObj: 'Serviços',
+        portfolioObj: 'Portfólio',
+        contactObj: 'Contato',
+
+        //home
+        titleObj: 'Bem-vindo',
+        subtitleObj: 'Olá, meu nome é',
+        professionObj: 'Sou',
+        professiondescObj: 'Sou desenvolvedor front-end com experiência em HTML, CSS, SASS, Bootstrap, JavaScript e TypeScript',
+
+        //about
+        titleaboutObj: 'Sobre Mim',
+        descriptionObj: 'Desenvolvedor Web',
+        bioObj: 'Sou brasileiro e desde muito jovem sempre me interessei pela área de TI, hoje busco aprofundar ainda mais meus conhecimentos e estou em constante evolução, tanto profissional quanto pessoal. Sempre dou o meu melhor no que faço, pois valorizo a qualidade do meu trabalho e a satisfação dos meus clientes.',
+        birthdayObj: 'Data de Nascimento',
+        ageObj: 'Idade',
+        githubObj: 'Github',
+        emailObj: 'Email',
+        phoneObj: 'Telefone',
+        cityObj: 'Cidade',
+        freelanceObj: 'Freelancer',
+        downloadCVObj: 'Baixar CV',
+        hireMeObj: 'Contrate-me',
+        educationObj: 'Educação',
+
+        // courses
+        typescriptObj: 'Curso de TypeScript',
+        typescriptdescObj: 'Curso completo de TypeScript, desde o básico até o avançado, com mais de 70 aulas',
+        webdevObj: 'Curso de Desenvolvimento Web Completo',
+        webdevdescObj: 'Domine Web - 20 cursos - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP 7, OO, MySQL, JQuery, MVC, APIs, IONIC e muito mais',
+        javascriptObj: 'Curso de JavaScript',
+        javascriptdescObj: 'Neste curso, aprendi o básico e as melhores práticas de JavaScript, como funções, eventos, loops de recursão e muito mais',
+        algorithmsObj: 'Curso de Algoritmos e Lógica de Programação',
+        algorithmsdescObj: 'Este curso abrange os conceitos de lógica de programação e algoritmos com a ferramenta Portugol Studio',
+        htmlcssObj: 'Curso de HTML5 e CSS3',
+        htmlcssdescObj: 'Neste curso, aprendi sobre tags HTML5, CSS3, semântica, responsividade, mobile first, formulários, desempenho do site e animações',
+
+        //services
+        titleservicesObj: 'Serviços',
+        descriptionservicesObj: 'Desenvolvedor Web',
+        detailsObj: 'Desenvolvimento com HTML, CSS, JavaScript, SASS, Bootstrap e TypeScript',
+
+        //portfolio
+        titleportfolioObj: 'Portfólio',
+        projectsObj: 'Meus Últimos Projetos:',
+
+        //contact
+        titlecontactObj: 'Entre em Contato',
+        subtitlecontactObj: 'Tem alguma dúvida ?',
+        messageObj: 'Estou à sua disposição',
+        callObj: 'Ligue para mim',
+        clickhereObj: 'Clique Aqui',
+        emailcontactObj: 'Envie-me um e-mail',
+        emailmessageObj: 'Sou muito responsivo às mensagens.',
+        nameObj: 'Nome',
+        subjectObj: 'Assunto',
+        messagesObj: 'Mensagem',
+        spanerroObj: 'Preencha este campo antes de enviar',
+        emailerroObj: 'Digite um endereço de e-mail válido',
+
+        //settings
+        themeObj: 'Cores do Tema',
+        colorObj: 'Cor:',
+        languageObj: 'Idioma'
+    },
+    en: {
+        //nav
+        homeObj: 'Home',
+        aboutObj: 'About',
+        servicesObj: 'Services',
+        portfolioObj: 'Portfolio',
+        contactObj: 'Contact',
+
+        //home
+        titleObj: 'Welcome',
+        subtitleObj: 'Hello, my name is',
+        professionObj: "I'm",
+        professiondescObj: "I'm web developer front-end with experience in HTML, CSS, SASS, Bootstrap, JavaScript and TypeScript",
+
+        //about
+        titleaboutObj: 'About Me',
+        descriptionObj: 'Web Developer',
+        bioObj: "I'm Brazilian and since I was very young I have always been interested in the IT area, today I am looking to deepen my knowledge even more and I am in constant evolution, both professionally and personally. I always give my best in what I do, because I value the quality of my work and the satisfaction of my clients.",
+        birthdayObj: 'Birthday',
+        ageObj: 'Age',
+        githubObj: 'Github',
+        emailObj: 'Email',
+        phoneObj: 'Phone',
+        cityObj: 'City',
+        freelanceObj: 'Freelance',
+        downloadCVObj: 'Download CV',
+        hireMeObj: 'Hire Me',
+        educationObj: 'Education',
+
+        // courses
+        typescriptObj: 'TypeScript Course',
+        typescriptdescObj: 'Complete TypeScript course, from basic to advanced, with over 70 lessons',
+        webdevObj: 'Complete Web Development Course',
+        webdevdescObj: 'Master Web - 20 courses - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP 7, OO, MySQL, JQuery, MVC, APIs, IONIC and much more',
+        javascriptObj: 'JavaScript Course',
+        javascriptdescObj: 'In this course, I learned the basics and best practices of JavaScript, such as functions, events, recursion loops, and much more',
+        algorithmsObj: 'Algorithms and Programming Logic Course',
+        algorithmsdescObj: 'This course covers programming logic and algorithms concepts with the Portugol Studio tool',
+        htmlcssObj: 'HTML5 and CSS3 Course',
+        htmlcssdescObj: 'In this course, I learned about HTML5 tags, CSS3, semantics, responsiveness, mobile-first, forms, site performance, and animations',
+
+        //services
+        titleservicesObj: 'Services',
+        descriptionservicesObj: 'Web Developer',
+        detailsObj: 'Development with HTML, CSS, JavaScript, SASS, Bootstrap, and TypeScript',
+
+        //portfolio
+        titleportfolioObj: 'Portfolio',
+        projectsObj: 'My Latest Projects:',
+
+        //contact
+        titlecontactObj: 'Contact',
+        subtitlecontactObj: 'Have any questions ?',
+        messageObj: 'I am at your disposal',
+        callObj: 'Call Me',
+        emailcontactObj: 'Send Me An Email',
+        emailmessageObj: "I'm Very Responsive To Messages",
+        clickhereObj: 'Click Here',
+        nameObj: 'Name',
+        subjectObj: 'Subject',
+        messagesObj: 'Message',
+        spanerroObj: 'Fill this field before sending',
+        emailerroObj: 'Enter a valid email address',
+
+        //settings
+        themeObj: 'Theme Colors',
+        colorObj: 'Color:',
+        languageObj: 'Language'
+    },
+    es: {
+        //nav
+        homeObj: 'Inicio',
+        aboutObj: 'Sobre Mí',
+        servicesObj: 'Servicios',
+        portfolioObj: 'Portafolio',
+        contactObj: 'Contacto',
+
+        //home
+        titleObj: 'Bienvenido',
+        subtitleObj: 'Hola, mi nombre es',
+        professionObj: 'Soy',
+        professiondescObj: 'Soy desarrollador web front-end con experiencia en HTML, CSS, SASS, Bootstrap, JavaScript y TypeScript',
+
+        //about
+        titleaboutObj: 'Sobre Mí',
+        descriptionObj: 'Desarrollador Web',
+        bioObj: 'Soy brasileño y desde muy joven siempre me interesé por el área de TI, hoy busco profundizar aún más mis conocimientos y estoy en constante evolución, tanto profesional como personal. Siempre doy lo mejor de mí en lo que hago, porque valoro la calidad de mi trabajo y la satisfacción de mis clientes.',
+        birthdayObj: 'Fecha de nacimiento',
+        ageObj: 'Edad',
+        githubObj: 'Github',
+        emailObj: 'Email',
+        phoneObj: 'Teléfono',
+        cityObj: 'Ciudad',
+        freelanceObj: 'Freelancer',
+        downloadCVObj: 'Descargar CV',
+        hireMeObj: 'Contrátame',
+        educationObj: 'Educación',
+
+        // courses
+        typescriptObj: 'Curso de TypeScript',
+        typescriptdescObj: 'Curso completo de TypeScript, desde lo básico hasta lo avanzado, con más de 70 clases',
+        webdevObj: 'Curso de Desarrollo Web Completo',
+        webdevdescObj: 'Domine Web - 20 cursos - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP 7, OO, MySQL, JQuery, MVC, APIs, IONIC y mucho más',
+        javascriptObj: 'Curso de JavaScript',
+        javascriptdescObj: 'En este curso, aprendí lo básico y las mejores prácticas de JavaScript, como funciones, eventos, loops de recursión y mucho más',
+        algorithmsObj: 'Curso de Algoritmos y Lógica de Programación',
+        algorithmsdescObj: 'Este curso abarca los conceptos de lógica de programación y algoritmos con la herramienta Portugol Studio',
+        htmlcssObj: 'Curso de HTML5 y CSS3',
+        htmlcssdescObj: 'En este curso, aprendí sobre etiquetas HTML5, CSS3, semántica, responsividad, mobile first, formularios, rendimiento del sitio y animaciones',
+
+        //services
+        titleservicesObj: 'Servicios',
+        descriptionservicesObj: 'Desarrollador Web',
+        detailsObj: 'Desarrollo con HTML, CSS, JavaScript, SASS, Bootstrap y TypeScript',
+
+        //portfolio
+        titleportfolioObj: 'Portafolio',
+        projectsObj: 'Mis Últimos Proyectos:',
+
+        //contact
+        titlecontactObj: 'Contacto',
+        subtitlecontactObj: '¿ Tiene alguna pregunta ?',
+        messageObj: 'Estoy a su disposición',
+        callObj: 'Llamame',
+        emailcontactObj: 'Envíame un correo electrónico',
+        emailmessageObj: 'Soy Muy Responsable A Los Mensajes',
+        clickhereObj: 'Haga Clic Aquí',
+        nameObj: 'Nombre',
+        subjectObj: 'Asunto',
+        messagesObj: 'Mensaje',
+        spanerroObj: 'Rellena este campo antes de enviar',
+        emailerroObj: 'Introduzca una dirección de correo electrónico válida',
+
+        //settings
+        themeObj: 'Colores del Tema',
+        colorObj: 'Color:',
+        languageObj: 'Idioma'
     }
-};
+}
 
 type Language = "pt" | "en" | "es";
 
-const setLanguage = (lang: Language) => {
-    if (lang === 'pt') {
-        updateTranslations('pt');
-    } else if ('en') {
-        updateTranslations('en');
-    }  else if ('es') {
-        updateTranslations('es');
-    }
-};
-
 const updateTranslations = (lang: Language) => {
-    if (lang === 'pt') {
-        Object.keys(translations[lang][key]).forEach((key: string) => {
-            let element = document.getElementById(key);
-            console.log(element)
-            if (element) {
-                element.innerHTML = translations[lang][key];
-            }
-        });
-    }
+    Object.keys(translations[lang]).forEach((key: string) => {
+        let element = document.getElementById(key) as HTMLElement
+        let spanErro = document.querySelectorAll('.spanerroObj') as NodeListOf <HTMLSpanElement>
+        let clickHere = document.querySelectorAll('.clickhereObj') as NodeListOf <HTMLAnchorElement>
+        if (element) {
+            element.innerHTML = translations[lang][key];
+        }
+        if (spanErro) {
+            spanErro.forEach(item => {
+                if (item.classList.contains(key)) {
+                    item.innerHTML = translations[lang][key];
+                }
+            })
+        }
+
+        if (clickHere) {
+            clickHere.forEach(item => {
+                if (item.classList.contains(key)) {
+                    item.innerHTML = translations[lang][key];
+                }
+            })
+        }
+    });
 };
