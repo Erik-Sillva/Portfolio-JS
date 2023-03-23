@@ -7,6 +7,7 @@
     <meta name="description" content="Know a little about me, see my latest personal projects, social networks and contact forms">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/css/main.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
     <title>Erik Silva</title>
 </head>
@@ -16,21 +17,21 @@
         <main class="main-container">
             <aside class="aside">
 
-                <div class="toggle" aria-label="menu">
+                <div class="toggle" aria-label="menu" data-aos="fade-down">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
 
                 <!-- Logo Start -->
-                <div class="logo">
+                <div class="logo" data-aos="zoom-in">
                     <a href="./index.html" aria-labelledby="logo">ES<span>-DEV</span></a>
                 </div>
                 <!-- Logo End -->
 
                 <!-- Nav Menu Start -->
                 <nav id="nav">
-                    <ul class="nav-aside">
+                    <ul class="nav-aside" data-aos="zoom-in">
                         <li class="li-sec" onclick="activeOn('home'), hiddenSidebar()">
                             <a href="#home" class="home active aside-link" aria-labelledby="home">
                                 <i class="fa-solid fa-house"></i> <span class="link-span
@@ -71,12 +72,12 @@
                 <!-- Home Section Start -->
                 <section class="home section padd-15" id="home">
                     <div class="container">
-                        <div class="row padd-15">
+                        <div class="row padd-15" data-aos="fade-right">
                             <h2 id="titleObj" class="section-title padd-15 wellcome" aria-labelledby="welcome">Welcome</h2>
                         </div>
 
                         <div class="row">
-                            <div class="home-info">
+                            <div class="home-info" data-aos="fade-up">
                                 <h3 class="hello" aria-labelledby="Hello, my name is Erik Silva">
                                     <span id="subtitleObj">Hello, my name is</span> <span class="name">Erik Silva</span>
                                 </h3>
@@ -88,7 +89,9 @@
                                 </p>
                             </div>
 
-                            <div class="home-img padd-15">
+                            <div class="home-img padd-15" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1000">
                                 <img src="./assets/img/i-img.jpeg" loading="lazy" alt="i">
                             </div>
                         </div>
@@ -99,11 +102,11 @@
                 <!-- About Section Start -->
                 <section class="about section" id="about">
                     <div class="container">
-                        <div class="row padd-15">
+                        <div class="row padd-15" data-aos="fade-right" data-aos-easing="ease-in-sine">
                             <h2 id="titleaboutObj" class="section-title padd-15" aria-labelledby="about me">About Me</h2>
                         </div>
 
-                        <div class="row">
+                        <div class="row" data-aos="fade-left" data-aos-easing="ease-in-sine">
                             <div class="about-content">
                                 <div class="row">
                                     <div class="about-text padd-15">
@@ -383,13 +386,14 @@
                 <!-- Service Section Start -->
                 <section class="services section" id="services">
                     <div class="container">
-                        <div class="row padd-15">
+                        <div class="row padd-15" data-aos="fade-right" data-aos-easing="ease-in-sine">
                             <h2 id="titleservicesObj" class="section-title padd-15" aria-labelledby="services">Services</h2>
                         </div>
 
                         <div class="row">
                             <!-- Service Item one Start -->
-                            <div class="service-item padd-15 m-auto">
+                            <div class="service-item padd-15 m-auto" data-aos="zoom-in-up" data-aos-easing="linear"
+                            data-aos-duration="500">
                                 <div class="service-item-inner">
                                     <div class="icon">
                                         <i class="fa-solid fa-laptop-code"></i>
@@ -425,18 +429,18 @@
                 <!-- Portfolio Section Start -->
                 <section class="portfolio section" id="portfolio">
                     <div class="container">
-                        <div class="row padd-15">
+                        <div class="row padd-15" data-aos="fade-right" data-aos-easing="ease-in-sine">
                             <h2 id="titleportfolioObj" class="section-title padd-15" aria-labelledby="portfolio">Portfolio</h2>
                         </div>
 
-                        <div class="row padd-15">
+                        <div class="row padd-15" data-aos="fade-left" data-aos-easing="ease-in-sine">
                             <h2 id="projectsObj" class="portfolio-heading padd-15" aria-labelledby="my latest projects">My Latest Projects:</h2>
                         </div>
 
                         <div class="row  padd-15 d-flex">
                             <div class="container-port-item">
                                 <!-- Portfolio Item 1 Start -->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                                     <div class="portfolio-img">
                                         <a href="https://erik-sillva.github.io/projeto-gow-ragnarok/" target="_blank" aria-label="project god of war ragnarök">
                                             <img src="./assets/img/projeto-gow.jpg" loading="lazy" alt="project god of war ragnarök">
@@ -446,7 +450,8 @@
                                 <!-- Portfolio Item 1 End -->
 
                                 <!-- Portfolio Item 2 Start -->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item" data-aos="fade-up"
+                                data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-sine">
                                     <div class="portfolio-img">
                                         <a href="https://erik-sillva.github.io/projeto-guessnumber/" target="_blank" aria-label="project guessnumber">
                                             <img src="./assets/img/projeto-guessnumber.png" loading="lazy" alt="project guessnumber">
@@ -458,7 +463,9 @@
 
                             <div class="container-port-item">
                                 <!-- Portfolio Item 3 Start -->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item" data-aos="fade-left"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine">
                                     <div class="portfolio-img">
                                         <a href="https://erik-sillva.github.io/projeto-stardevs/" target="_blank" aria-label="project stardevs">
                                             <img src="./assets/img/projeto-stardevs.png" loading="lazy" alt="project stardevs">
@@ -468,7 +475,8 @@
                                 <!-- Portfolio Item 3 End -->
 
                                 <!-- Portfolio Item 4 Start -->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item" data-aos="fade-up"
+                                data-aos-anchor-placement="center-bottom">
                                     <div class="portfolio-img">
                                         <a href="https://erik-sillva.github.io/projeto-relogio-digital/" target="_blank" aria-label="digital watch">
                                             <img src="./assets/img/projeto-relogio.png" loading="lazy" alt="digital watch">
@@ -485,23 +493,26 @@
                 <!-- Contact Section Start -->
                 <section class="contact section" id="contact">
                     <div class="container">
-                        <div class="row padd-15">
+                        <div class="row padd-15" data-aos="fade-right">
                             <h2 id="titlecontactObj" class="section-title padd-15" aria-labelledby="contact me">Contact</h2>
                         </div>
 
                         <!-- Row First Titles Start -->
                         <div class="row padd-15">
                             <div class="contact-titles">
-                                <h3 id="subtitlecontactObj" class="contact-title" aria-labelledby="have you any questions?">Have any questions ?</h3>
+                                <h3 id="subtitlecontactObj" class="contact-title" aria-labelledby="have you any questions?" data-aos="fade-down"
+                                data-aos-anchor-placement="center-bottom">Have any questions ?</h3>
 
-                                <h4 id="messageObj" class="contact-sub-title" aria-labelledby="i'm at your services">I am at your disposal</h4>
+                                <h4 id="messageObj" class="contact-sub-title" aria-labelledby="i'm at your services" data-aos="fade-up"
+                                data-aos-anchor-placement="center-bottom">I am at your disposal</h4>
                             </div>
                         </div>
                         <!-- Row First Titles End -->
                         
                         <!-- Row Info Itens Start -->
                         <div class="row d-flex">
-                            <div class="container-contact-info">
+                            <div class="container-contact-info" data-aos="fade-right" data-aos-offset="200"
+                            data-aos-easing="ease-in-sine">
                                 <!-- Contact Info Item 1 Start -->
                                 <div class="contact-info-item">
                                     <i class="fa-solid fa-phone"></i>
@@ -519,7 +530,8 @@
                                 <!-- Contact Info Item 2 End -->
                             </div>
 
-                            <div class="container-contact-info">
+                            <div class="container-contact-info" data-aos="fade-left" data-aos-offset="200"
+                            data-aos-easing="ease-in-sine">
                                 <!-- Contact Info Item 3 Start -->
                                 <div class="contact-info-item">
                                     <i class="fa-brands fa-linkedin"></i>
@@ -544,7 +556,7 @@
                         <!-- Row Info Itens End -->
 
                         <!-- Row Second Titles Start -->
-                        <div class="row">
+                        <div class="row" data-aos="zoom-out-up">
                             <div class="contact-titles">
                                 <h3 id="emailcontactObj" class="contact-title" aria-labelledby="send me an email">send me an email</h3>
                                 <h4 id="emailmessageObj" class="contact-sub-title" aria-labelledby="i'm very resposive to messages">i'm very responsive to messages</h4>
@@ -553,7 +565,8 @@
                         <!-- Row Second Titles End -->
 
                         <!-- Contact Form Start -->
-                        <div class="row">
+                        <div class="row" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
                             <div class="contact-form padd-15">
                                 <form action="https://api.staticforms.xyz/submit" method="post" class="padd-15" id="form">
                                     <input type="hidden" name="accessKey" value="652bf1d9-f509-41ef-802c-5e0b655abcd3">
@@ -670,6 +683,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/06dbd9c6a8.js" crossorigin="anonymous"></script>
     <script src="./src/ts/script.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./src/ts/typed.min.js"></script>
 </body>
 </html>
